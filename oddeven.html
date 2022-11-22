@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+
+}
+.oddeven{
+    display:center;
+    font-size: 40px;
+}
+.oddeven1{
+    font-size: 50px;
+    font-style:inherit;
+}
+#showmsg{
+    font-size: 30px;
+}
+</style>
+</head>
+
+<body>
+    <h1 class="h1">Whether Even Or odd</h1>
+    <h2 class="h2"> JavaScript to find odd or even number! </h2>
+
+    <label class="oddeven1"> Enter Number </label> <br>
+    <input class="oddeven" type="number" id="oddeven" onkeyup="isCheck()"><span id="showmsg"></span>
+
+
+
+
+    <script>
+      function isCheck(){
+        var num = document.getElementById('oddeven').
+        value;
+        alert(value)
+        if((num % 2) === 0){
+            document.getElementById('showmsg').
+            innerHTML = "Hurray! Number " +num+ " is an even number ";
+
+
+        }
+        else{
+            document.getElementById('showmsg').
+            innerHTML = "Oh No! Number " +num+ " is not an even number ";
+        }
+      }
+    </script>
+</body>
+
+</html>
